@@ -14,7 +14,7 @@ WORKDIR /build
 COPY ./src ./
 
 # Download dependencies
-RUN GOBIN=$GOPATH/bin go get -v
+RUN go mod download
 
 # Build the application
 RUN go build -o server .

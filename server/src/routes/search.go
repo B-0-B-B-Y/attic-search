@@ -1,12 +1,13 @@
-package main
+package routes
 
 import (
-	database "./database"
+	"attic-search/database"
+
 	"github.com/gin-gonic/gin"
 )
 
-// searchGET : Performs a lookup in the database using user-defined keyword
-func searchGET(c *gin.Context) {
+// SearchGET : Performs a lookup in the database using user-defined keyword
+func SearchGET(c *gin.Context) {
 	keyword := c.Param("keyword")
 	if keyword == "" {
 		c.JSON(400, gin.H{

@@ -1,6 +1,10 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+
+	routes "attic-search/routes"
+)
 
 func main() {
 	router := gin.Default()
@@ -11,6 +15,6 @@ func main() {
 		})
 	})
 
-	router.GET("/search/:keyword", searchGET)
+	router.GET("/search/:keyword", routes.SearchGET)
 	router.Run(":3000")
 }
