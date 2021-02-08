@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 
-	routes "attic-search/routes"
+	"attic-search/routes"
 )
 
 func main() {
