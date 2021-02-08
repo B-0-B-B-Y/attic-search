@@ -1,9 +1,9 @@
 package routes
 
 import (
-	"attic-search/database"
-
 	"github.com/gin-gonic/gin"
+
+	"attic-search/database"
 )
 
 // SearchGET : Performs a lookup in the database using user-defined keyword
