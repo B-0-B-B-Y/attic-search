@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strings"
 )
 
 // Object : The database structure for each object stored in the database
@@ -44,8 +45,46 @@ func init() {
 	}
 }
 
-// GetObject : Return information about an object based on a keyword search
-func GetObject(keyword string) (*[]Object, error) {
+// inArray : Check if a user specified keyword matches any existing items in the database
+func inArray(arrayToSearch []string, keyword string) bool {
+	for _, word := range arrayToSearch {
+		if strings.Contains(word, keyword) {
+			return true
+		}
+	}
+
+	return false
+}
+
+// fuzzySearch : Search all JSON properties across all items for a keyword match
+func fuzzySearch(item Object, keyword string) bool {
+	found := false
+
+	if strings.Contains(item.Side, keyword) {
+		found = true
+	}
+
+	if strings.Contains(item.Item, keyword) {
+		found = true
+	}
+
+	if strings.Contains(item.Container, keyword) {
+		found = true
+	}
+
+	if strings.Contains(item.Description, keyword) {
+		found = true
+	}
+
+	if inArray(item.Keywords, keyword) {
+		found = true
+	}
+
+	return found
+}
+
+// GetObjects : Return a list containing information about all objects matching a keyword search
+func GetObjects(keyword string) (*[]Object, error) {
 	var foundItems []Object
 
 	for _, item := range objects {
@@ -61,13 +100,19 @@ func GetObject(keyword string) (*[]Object, error) {
 	return nil, errors.New("No objects found")
 }
 
-// inArray : Check if a user specified keyword matches any existing items in the database
-func inArray(arrayToSearch []string, keyword string) bool {
-	for _, word := range arrayToSearch {
-		if word == keyword {
-			return true
+// GetFuzzyObjects : Return information about all objects matching a fuzzy keyword search
+func GetFuzzyObjects(keyword string) (*[]Object, error) {
+	var foundItems []Object
+
+	for _, item := range objects {
+		if fuzzySearch(item, keyword) == true {
+			foundItems = append(foundItems, item)
 		}
 	}
 
-	return false
+	if len(foundItems) > 0 {
+		return &foundItems, nil
+	}
+
+	return nil, errors.New("No objects found")
 }
