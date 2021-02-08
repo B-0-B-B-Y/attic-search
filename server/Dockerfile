@@ -1,10 +1,11 @@
 FROM golang AS builder
 
-# Set necessary environmet variables needed for our image
+# Set necessary environmet variables needed for our image - This image will run on a Pi3
 ENV GO111MODULE=auto \
     CGO_ENABLED=0 \
     GOOS=linux \
-    GOARCH=amd64
+    GOARCH=arm \
+    GOARM=7
 
 # Move to working directory /build
 WORKDIR /build
