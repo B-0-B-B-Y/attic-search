@@ -17,6 +17,7 @@ type Object struct {
 	Item        string   `json:"item"`
 	Container   string   `json:"container"`
 	Description string   `json:"description"`
+	Frequent    bool     `json:"frequent"`
 	Keywords    []string `json:"keywords"`
 }
 
