@@ -19,4 +19,6 @@ data.json
 
 # Node dependencies
 node_modules/
+
+# Expo specific dependencies
 .expo/
