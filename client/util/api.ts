@@ -1,26 +1,32 @@
-import got from 'got'
+import axios from 'axios';
 
-const { API_HOST } = process.env
+const { API_HOST } = process.env;
 
-type DataObject = {
-  side: string,
-  position: number,
-  item: string,
-  container: string,
-  description: string,
-  frequent: boolean,
-  keywords: Array<string>
-}
+export type SearchResult = {
+  items: Array<DataObject> | null;
+};
 
-export const search = async (keyword: string): Promise<DataObject | null> => {
+export type DataObject = {
+  side: string;
+  position: number;
+  item: string;
+  container: string;
+  description: string;
+  frequent: boolean;
+  keywords: Array<string>;
+};
+
+export const search = async (keyword: string): Promise<SearchResult | null> => {
   try {
-    const request = await got.get(`${API_HOST}/search/word/${keyword}`)
-    const data = await JSON.parse(request.body)
+    const request = await axios.get(
+      `http://${API_HOST}/search/word/${keyword}`
+    );
+    const data = await request.data;
 
-    return data
+    return data;
   } catch (err) {
-    console.error(err)
+    console.error(err);
   }
 
-  return null
-}
+  return null;
+};

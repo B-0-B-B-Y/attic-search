@@ -1,12 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Search } from './components/Search';
+import { Result } from './components/Result';
+import { SearchResult } from './util/api';
 
 export default function App() {
+  const [data, setData] = useState<SearchResult | null>(null);
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View>
+        <Search setData={setData} />
+        <Result data={data} />
+      </View>
+      <StatusBar style='auto' />
     </View>
   );
 }
