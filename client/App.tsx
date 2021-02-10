@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <ScrollView contentContainerStyle={styles.container}>
+      <ScrollView>
         <Search setData={setData} />
         <Result data={data} />
       </ScrollView>
