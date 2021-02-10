@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, ScrollView, View } from 'react-native';
 import { Search } from './components/Search';
 import { Result } from './components/Result';
 import { SearchResult } from './util/api';
@@ -10,10 +10,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View>
+      <ScrollView contentContainerStyle={styles.container}>
         <Search setData={setData} />
         <Result data={data} />
-      </View>
+      </ScrollView>
       <StatusBar style='auto' />
     </View>
   );

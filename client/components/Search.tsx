@@ -16,17 +16,15 @@ export const Search = ({ setData }: SearchProps) => {
   };
 
   return (
-    <ScrollView>
+    <View>
       <Text>What are you looking for?</Text>
-      <View>
-        <TextInput
-          value={keyword}
-          onChangeText={(keyword) => setKeyword(keyword)}
-          onSubmitEditing={getData}
-          placeholder='Type your keyword in here...'
-        />
-      </View>
-    </ScrollView>
+      <TextInput
+        value={keyword}
+        onChangeText={(keyword) => setKeyword(keyword)}
+        onSubmitEditing={getData}
+        placeholder='Type your keyword in here...'
+      />
+    </View>
   );
 };
 
