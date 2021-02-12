@@ -11,6 +11,7 @@ export const Item = ({ item }: ItemProps) => {
   return (
     <View>
       <Text>Item: {item?.item}</Text>
+      <Text>Container: {item?.container}</Text>
       <Text>Position: {item?.position}</Text>
       <Text>Side: {capitalise(`${item?.side}`)}</Text>
       <Text>Description: {item?.description}</Text>
