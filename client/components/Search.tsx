@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, ScrollView, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { search } from '../util/api';
 
 interface SearchProps {
@@ -16,9 +16,10 @@ export const Search = ({ setData }: SearchProps) => {
   };
 
   return (
-    <View>
-      <Text>What are you looking for?</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>What are you looking for? 🕵️‍♂️</Text>
       <TextInput
+        style={styles.input}
         value={keyword}
         onChangeText={(keyword) => setKeyword(keyword)}
         onSubmitEditing={getData}
@@ -31,8 +32,19 @@ export const Search = ({ setData }: SearchProps) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title: {
+    fontSize: 24,
+    margin: '16px',
+    marginRight: 0,
+    marginLeft: 0,
+    textAlign: 'center',
+  },
+  input: {
+    fontSize: 16,
+    padding: '8px',
+    width: '90%',
   },
 });

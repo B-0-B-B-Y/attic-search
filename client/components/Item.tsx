@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { capitalise } from '../util';
 import { DataObject } from '../util/api';
 
@@ -9,7 +9,7 @@ interface ItemProps {
 
 export const Item = ({ item }: ItemProps) => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Item: {item?.item}</Text>
       <Text>Container: {item?.container}</Text>
       <Text>Position: {item?.position}</Text>
@@ -19,3 +19,19 @@ export const Item = ({ item }: ItemProps) => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    textAlign: 'left',
+    backgroundColor: 'white',
+    opacity: 0.9,
+    padding: 8,
+    marginTop: 24,
+    width: '90%',
+    maxWidth: '90%',
+    borderRadius: 8,
+  },
+});
