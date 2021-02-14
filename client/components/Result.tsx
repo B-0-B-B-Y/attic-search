@@ -9,16 +9,18 @@ interface ResultProps {
 
 export const Result = ({ data }: ResultProps) => {
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <>
       <View style={styles.searchResultCounter}>
         {data && (
           <Text style={styles.counter}>Found: {data?.items?.length || 0}</Text>
         )}
       </View>
-      {data?.items &&
-        data.items.map((item) => <Item key={item.position} item={item} />)}
-      {!data && <Text style={styles.text}>No items were found.</Text>}
-    </ScrollView>
+      <ScrollView contentContainerStyle={styles.container}>
+        {data?.items &&
+          data.items.map((item) => <Item key={item.position} item={item} />)}
+        {!data && <Text style={styles.text}>No items were found.</Text>}
+      </ScrollView>
+    </>
   );
 };
 
@@ -26,6 +28,8 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
+    paddingTop: 12,
+    paddingBottom: 12,
   },
   text: {
     marginTop: 32,
