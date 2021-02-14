@@ -24,7 +24,6 @@ export const Result = ({ data }: ResultProps) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -32,7 +31,6 @@ const styles = StyleSheet.create({
     marginTop: 32,
   },
   searchResultCounter: {
-    flex: 1,
     alignItems: 'flex-end',
     width: '90%',
     marginTop: 16,

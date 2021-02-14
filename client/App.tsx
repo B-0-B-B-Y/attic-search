@@ -10,11 +10,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View>
-        <Search setData={setData} />
-        <Result data={data} />
-      </View>
-      <StatusBar style='auto' />
+      <Search setData={setData} />
+      <Result data={data} />
+      <StatusBar style='dark' />
     </View>
   );
 }
@@ -25,5 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E8E8E8',
     alignItems: 'center',
     justifyContent: 'center',
+    height: '100%',
+    width: '100%',
   },
 });

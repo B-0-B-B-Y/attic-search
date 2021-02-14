@@ -19,7 +19,7 @@ export type DataObject = {
 export const search = async (keyword: string): Promise<SearchResult | null> => {
   try {
     const request = await axios.get(
-      `http://${API_HOST}/search/word/${keyword}`
+      `${API_HOST}/search/word/${keyword}`
     );
     const data = await request.data;
 

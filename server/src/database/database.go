@@ -46,10 +46,15 @@ func init() {
 	}
 }
 
+// compare : Helper function to perform all string checks in lowercase
+func compare(str string, substr string) bool {
+	return strings.Contains(strings.ToLower(str), strings.ToLower(substr))
+}
+
 // inArray : Check if a user specified keyword matches any existing items in the database
 func inArray(arrayToSearch []string, keyword string) bool {
 	for _, word := range arrayToSearch {
-		if strings.Contains(word, keyword) {
+		if compare(word, keyword) {
 			return true
 		}
 	}
@@ -61,19 +66,19 @@ func inArray(arrayToSearch []string, keyword string) bool {
 func fuzzySearch(item Object, keyword string) bool {
 	found := false
 
-	if strings.Contains(item.Side, keyword) {
+	if compare(item.Side, keyword) {
 		found = true
 	}
 
-	if strings.Contains(item.Item, keyword) {
+	if compare(item.Item, keyword) {
 		found = true
 	}
 
-	if strings.Contains(item.Container, keyword) {
+	if compare(item.Container, keyword) {
 		found = true
 	}
 
-	if strings.Contains(item.Description, keyword) {
+	if compare(item.Description, keyword) {
 		found = true
 	}
 

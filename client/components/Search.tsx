@@ -31,20 +31,21 @@ export const Search = ({ setData }: SearchProps) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 72,
   },
   title: {
     fontSize: 24,
-    margin: '16px',
+    marginTop: 16,
+    marginBottom: 16,
     marginRight: 0,
     marginLeft: 0,
     textAlign: 'center',
   },
   input: {
     fontSize: 16,
-    padding: '8px',
+    padding: 8,
     width: '90%',
   },
 });

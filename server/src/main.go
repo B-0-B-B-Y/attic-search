@@ -8,13 +8,9 @@ import (
 )
 
 func main() {
-	allowedHosts := []string{
-		"http://localhost",
-		"http://localhost:19006",
-	}
 	router := gin.Default()
 
-	router.Use(middleware.SetCORS(allowedHosts))
+	router.Use(middleware.SetCORS())
 
 	router.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
@@ -24,5 +20,5 @@ func main() {
 
 	router.GET("/search/word/:keyword", routes.SearchGET)
 	router.GET("/search/fuzzy/:keyword", routes.FuzzySearchGET)
-	router.Run(":3000")
+	router.Run()
 }
