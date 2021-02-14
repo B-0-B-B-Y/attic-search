@@ -91,7 +91,7 @@
 37-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
 38
 39    <application
-39-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:24:3-43:17
+39-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:24:3-46:17
 40        android:name="com.quanticdreams.atticsearch.MainApplication"
 40-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:24:16-47
 41        android:allowBackup="true"
@@ -108,15 +108,15 @@
 47        android:theme="@style/AppTheme"
 47-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:24:189-220
 48        android:usesCleartextTraffic="true" >
-48-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/debug/AndroidManifest.xml:7:18-53
+48-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/debug/AndroidManifest.xml:6:18-53
 49        <meta-data
-49-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:25:5-130
+49-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:25:5-131
 50            android:name="expo.modules.updates.EXPO_UPDATE_URL"
 50-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:25:16-67
 51            android:value="https://exp.host/@quanticdreams/attic-search" />
 51-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:25:68-128
 52        <meta-data
-52-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:26:5-93
+52-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:26:5-94
 53            android:name="expo.modules.updates.EXPO_SDK_VERSION"
 53-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:26:16-68
 54            android:value="40.0.0" />
@@ -139,127 +139,133 @@
 62-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:29:16-79
 63            android:value="0" />
 63-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:29:80-97
-64
-65        <activity
-65-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:5-41:16
-66            android:name="com.quanticdreams.atticsearch.MainActivity"
-66-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:15-43
-67            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-67-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:77-154
-68            android:label="@string/app_name"
-68-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:44-76
-69            android:launchMode="singleTask"
-69-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:155-186
-70            android:screenOrientation="portrait"
-70-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:276-312
-71            android:theme="@style/Theme.App.SplashScreen"
-71-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:230-275
-72            android:windowSoftInputMode="adjustResize" >
-72-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:187-229
-73            <intent-filter>
-73-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:31:7-34:23
-74                <action android:name="android.intent.action.MAIN" />
-74-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:32:9-60
-74-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:32:17-58
-75
-76                <category android:name="android.intent.category.LAUNCHER" />
-76-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:9-68
-76-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:19-66
-77            </intent-filter>
-78            <intent-filter>
-78-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:35:7-40:23
-79                <action android:name="android.intent.action.VIEW" />
-79-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:36:9-60
-79-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:36:17-58
-80
-81                <category android:name="android.intent.category.DEFAULT" />
-81-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:37:9-67
-81-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:37:19-65
-82                <category android:name="android.intent.category.BROWSABLE" />
-82-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:38:9-69
-82-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:38:19-67
+64        <meta-data
+64-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:5-99
+65            android:name="expo.modules.updates.EXPO_RELEASE_CHANNEL"
+65-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:16-72
+66            android:value="default" />
+66-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:30:73-96
+67
+68        <activity
+68-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:32:3-44:16
+69            android:name="com.quanticdreams.atticsearch.MainActivity"
+69-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:5-33
+70            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+70-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:67-144
+71            android:label="@string/app_name"
+71-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:34-66
+72            android:launchMode="singleTask"
+72-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:145-176
+73            android:screenOrientation="portrait"
+73-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:266-302
+74            android:theme="@style/Theme.App.SplashScreen"
+74-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:220-265
+75            android:windowSoftInputMode="adjustResize" >
+75-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:33:177-219
+76            <intent-filter>
+76-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:34:7-37:23
+77                <action android:name="android.intent.action.MAIN" />
+77-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:35:9-60
+77-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:35:17-58
+78
+79                <category android:name="android.intent.category.LAUNCHER" />
+79-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:36:9-68
+79-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:36:19-66
+80            </intent-filter>
+81            <intent-filter>
+81-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:38:7-43:23
+82                <action android:name="android.intent.action.VIEW" />
+82-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:39:9-60
+82-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:39:17-58
 83
-84                <data android:scheme="com.quanticdreams.atticsearch" />
-84-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:39:9-63
-84-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:39:15-61
-85            </intent-filter>
-86        </activity>
-87        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-87-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:42:5-81
-87-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:42:15-79
-88
-89        <meta-data
-89-->[:unimodules-react-native-adapter] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:91
-90            android:name="org.unimodules.core.AppLoader#react-native-headless"
-90-->[:unimodules-react-native-adapter] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
-91            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
-91-->[:unimodules-react-native-adapter] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
-92
-93        <provider
-93-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-26:20
-94            android:name="expo.modules.filesystem.FileSystemFileProvider"
-94-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-74
-95            android:authorities="com.quanticdreams.atticsearch.FileSystemFileProvider"
-95-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
-96            android:exported="false"
-96-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-37
-97            android:grantUriPermissions="true" >
-97-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-47
-98            <meta-data
-98-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-25:70
-99                android:name="android.support.FILE_PROVIDER_PATHS"
-99-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:17-67
-100                android:resource="@xml/file_system_provider_paths" />
-100-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-67
-101        </provider>
-102
-103        <service
-103-->[:expo-location] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
-104            android:name="expo.modules.location.services.LocationTaskService"
-104-->[:expo-location] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
-105            android:exported="false" />
-105-->[:expo-location] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
-106
-107        <activity
-107-->[com.google.android.gms:play-services-base:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/c54a81a720816df78e20b33729596bbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-108-->[com.google.android.gms:play-services-base:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/c54a81a720816df78e20b33729596bbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-109            android:exported="false"
-109-->[com.google.android.gms:play-services-base:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/c54a81a720816df78e20b33729596bbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.google.android.gms:play-services-base:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/c54a81a720816df78e20b33729596bbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-111
-112        <meta-data
-112-->[com.google.android.gms:play-services-basement:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/d9f2113d906f5f57e52da097a52eba20/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
-113            android:name="com.google.android.gms.version"
-113-->[com.google.android.gms:play-services-basement:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/d9f2113d906f5f57e52da097a52eba20/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
-114            android:value="@integer/google_play_services_version" />
-114-->[com.google.android.gms:play-services-basement:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/d9f2113d906f5f57e52da097a52eba20/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
-115
-116        <service
-116-->[androidx.room:room-runtime:2.1.0] /home/zer0/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
-117            android:name="androidx.room.MultiInstanceInvalidationService"
-117-->[androidx.room:room-runtime:2.1.0] /home/zer0/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
-118            android:exported="false" />
-118-->[androidx.room:room-runtime:2.1.0] /home/zer0/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+84                <category android:name="android.intent.category.DEFAULT" />
+84-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:40:9-67
+84-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:40:19-65
+85                <category android:name="android.intent.category.BROWSABLE" />
+85-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:41:9-69
+85-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:41:19-67
+86
+87                <data android:scheme="com.quanticdreams.atticsearch" />
+87-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:42:9-63
+87-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:42:15-61
+88            </intent-filter>
+89        </activity>
+90        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+90-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:45:5-81
+90-->/home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/android/app/src/main/AndroidManifest.xml:45:15-79
+91
+92        <meta-data
+92-->[:unimodules-react-native-adapter] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:91
+93            android:name="org.unimodules.core.AppLoader#react-native-headless"
+93-->[:unimodules-react-native-adapter] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
+94            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+94-->[:unimodules-react-native-adapter] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
+95
+96        <provider
+96-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-26:20
+97            android:name="expo.modules.filesystem.FileSystemFileProvider"
+97-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-74
+98            android:authorities="com.quanticdreams.atticsearch.FileSystemFileProvider"
+98-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+99            android:exported="false"
+99-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-37
+100            android:grantUriPermissions="true" >
+100-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-47
+101            <meta-data
+101-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-25:70
+102                android:name="android.support.FILE_PROVIDER_PATHS"
+102-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:17-67
+103                android:resource="@xml/file_system_provider_paths" />
+103-->[:expo-file-system] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:17-67
+104        </provider>
+105
+106        <service
+106-->[:expo-location] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+107            android:name="expo.modules.location.services.LocationTaskService"
+107-->[:expo-location] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+108            android:exported="false" />
+108-->[:expo-location] /home/zer0/Documents/GitHub/B-0-B-B-Y/attic-search/client/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+109
+110        <activity
+110-->[com.google.android.gms:play-services-base:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/c54a81a720816df78e20b33729596bbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+111            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+111-->[com.google.android.gms:play-services-base:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/c54a81a720816df78e20b33729596bbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+112            android:exported="false"
+112-->[com.google.android.gms:play-services-base:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/c54a81a720816df78e20b33729596bbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+113            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+113-->[com.google.android.gms:play-services-base:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/c54a81a720816df78e20b33729596bbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+114
+115        <meta-data
+115-->[com.google.android.gms:play-services-basement:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/d9f2113d906f5f57e52da097a52eba20/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+116            android:name="com.google.android.gms.version"
+116-->[com.google.android.gms:play-services-basement:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/d9f2113d906f5f57e52da097a52eba20/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+117            android:value="@integer/google_play_services_version" />
+117-->[com.google.android.gms:play-services-basement:16.0.1] /home/zer0/.gradle/caches/transforms-2/files-2.1/d9f2113d906f5f57e52da097a52eba20/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+118
 119        <service
-119-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
-120            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-120-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+119-->[androidx.room:room-runtime:2.1.0] /home/zer0/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+120            android:name="androidx.room.MultiInstanceInvalidationService"
+120-->[androidx.room:room-runtime:2.1.0] /home/zer0/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
 121            android:exported="false" />
-121-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+121-->[androidx.room:room-runtime:2.1.0] /home/zer0/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
 122        <service
-122-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
-123            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-123-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+122-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+123            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+123-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
 124            android:exported="false" />
-124-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+124-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
 125        <service
-125-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
-126            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-126-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+125-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+126            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+126-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
 127            android:exported="false" />
-127-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
-128    </application>
-129
-130</manifest>
+127-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+128        <service
+128-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+129            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+129-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+130            android:exported="false" />
+130-->[io.nlopez.smartlocation:library:3.2.11] /home/zer0/.gradle/caches/transforms-2/files-2.1/b0a6ae71e01afbff2e80fa160e5f015f/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+131    </application>
+132
+133</manifest>

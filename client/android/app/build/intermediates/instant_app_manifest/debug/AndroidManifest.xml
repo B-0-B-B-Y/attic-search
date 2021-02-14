@@ -62,6 +62,9 @@
         <meta-data
             android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
             android:value="0" />
+        <meta-data
+            android:name="expo.modules.updates.EXPO_RELEASE_CHANNEL"
+            android:value="default" />
 
         <activity
             android:name="com.quanticdreams.atticsearch.MainActivity"
