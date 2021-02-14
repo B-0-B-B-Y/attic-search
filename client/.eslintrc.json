@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": "prettier",
+  "plugins": [
+    "prettier",
+    "import"
+  ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "semi": [2, "always"],
+    "no-multiple-empty-lines": [2, {"max": 2, "maxEOF": 1, "maxBOF": 0}],
+    "no-trailing-spaces": "error",
+    "quotes": [2, "single", "avoid-escape"],
+    "prettier/prettier": "error",
+    "import/order": ["error", {"groups": ["builtin", "external", "internal", "index", "parent", "sibling", "object"]}],
+    "strict": 0
+  },
+  "ignorePatterns": "build/"
+}
