@@ -1920,6 +1920,11 @@
     sudo-prompt "^9.0.0"
     wcwidth "^1.0.1"
 
+"@react-native-community/google-signin@^5.0.0":
+  version "5.0.0"
+  resolved "https://dpduk-t-continuous-integration.appspot.com/@react-native-community%2fgoogle-signin/-/google-signin-5.0.0.tgz#d1d89c697cc214c10017fa283817e84bd03b2d76"
+  integrity sha512-MvFHImmtlmE1kJZgZ9XaULm/OBuQ/AQWOCPr3NzYTUv2cCqyGwfFrealo5PS/fuL/InCGcfqK1k/1dZ+67Hjmg==
+
 "@react-native-firebase/app@^10.8.0":
   version "10.8.0"
   resolved "https://dpduk-t-continuous-integration.appspot.com/@react-native-firebase%2fapp/-/app-10.8.0.tgz#130dd841183d45ff378e6aab2b6e89a30d7c499d"
