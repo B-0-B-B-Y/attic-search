@@ -58,3 +58,6 @@ build/
 .navigation
 captures/
 output.json 
+
+# GCP related
+google-services.json
