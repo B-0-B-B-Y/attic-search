@@ -58,6 +58,8 @@ build/
 .navigation
 captures/
 output.json 
+debug.keystore
+release.keystore
 
 # GCP related
 google-services.json
