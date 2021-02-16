@@ -3,7 +3,6 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "prod": "react-native run-android --variant=release",
-    "ios": "react-native run-ios",
     "web": "expo start --web"
   },
   "dependencies": {
