@@ -67,3 +67,4 @@ ios/
 
 # GCP related
 google-services.json
+serviceAccount.json
