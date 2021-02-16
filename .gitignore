@@ -60,6 +60,7 @@ captures/
 output.json 
 debug.keystore
 release.keystore
+upload.keystore*
 
 # GCP related
 google-services.json
