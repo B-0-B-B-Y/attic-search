@@ -62,5 +62,8 @@ debug.keystore
 release.keystore
 upload.keystore*
 
+# This is an Android only app, so no ios needed
+ios/
+
 # GCP related
 google-services.json
