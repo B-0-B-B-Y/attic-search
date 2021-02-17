@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { FirebaseAuthTypes } from '@react-native-firebase/auth';
 import { search } from '../util/api';
 
 interface SearchProps {
+  user: FirebaseAuthTypes.User | null;
   setData: Function;
 }
 
-export const Search = ({ setData }: SearchProps) => {
+export const Search = ({ user, setData }: SearchProps) => {
   const [keyword, setKeyword] = useState<string>('');
 
   const getData = async () => {
-    const data = await search(keyword);
+    const userIdToken = await user?.getIdToken(false);
 
-    setData(data);
+    if (userIdToken) {
+      const data = await search(keyword, userIdToken);
+      setData(data);
+    }
   };
 
   return (

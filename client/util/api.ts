@@ -16,11 +16,16 @@ export type DataObject = {
   keywords: Array<string>;
 };
 
-export const search = async (keyword: string): Promise<SearchResult | null> => {
+export const search = async (
+  keyword: string,
+  userIdToken: string
+): Promise<SearchResult | null> => {
   try {
-    const request = await axios.get(
-      `${API_HOST}/search/word/${keyword}`
-    );
+    const request = await axios.get(`${API_HOST}/search/word/${keyword}`, {
+      headers: {
+        Authorization: userIdToken,
+      },
+    });
     const data = await request.data;
 
     return data;

@@ -58,7 +58,7 @@ export default function App() {
   if (user && userPermissions?.allowed) {
     return (
       <View style={styles.container}>
-        <Search setData={setData} />
+        <Search user={user} setData={setData} />
         <Result data={data} />
         <StatusBar style='dark' />
       </View>
