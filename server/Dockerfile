@@ -11,7 +11,7 @@ ENV GO111MODULE=auto \
 WORKDIR /build
 
 # Copy the code into the container
-COPY ./src ./
+COPY ./ ./
 
 # Download dependencies
 RUN go mod download
@@ -29,7 +29,6 @@ RUN cp /build/server .
 FROM scratch
 
 COPY --from=builder /dist/server /
-COPY ./src/database/data.json /database/data.json
 
 # Command to run
 ENTRYPOINT ["/server"]
