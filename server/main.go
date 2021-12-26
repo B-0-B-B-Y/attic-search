@@ -11,7 +11,7 @@ func main() {
 	router := gin.Default()
 
 	router.Use(middleware.SetCORS())
-	router.Use(middleware.VerifyUser())
+	// router.Use(middleware.VerifyUser())
 
 	router.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
@@ -21,5 +21,6 @@ func main() {
 
 	router.GET("/search/word/:keyword", routes.SearchGET)
 	router.GET("/search/fuzzy/:keyword", routes.FuzzySearchGET)
+	router.GET("/search/one/:keyword", routes.SearchOne)
 	router.Run()
 }

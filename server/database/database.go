@@ -1,12 +1,7 @@
 package database
 
 import (
-	"encoding/json"
 	"errors"
-	"fmt"
-	"io/ioutil"
-	"log"
-	"os"
 	"strings"
 )
 
@@ -22,29 +17,6 @@ type Object struct {
 }
 
 var objects []Object
-
-// init : Initialise the database handler
-func init() {
-	wd, err := os.Getwd()
-	if err != nil {
-		log.Fatalln("Error getting current working directory: ", err)
-	}
-
-	dataFile, err := os.Open(fmt.Sprintf("%v/database/data.json", wd))
-	if err != nil {
-		log.Fatalln("Error opening the database JSON file: ", err)
-	}
-
-	byteData, err := ioutil.ReadAll(dataFile)
-	if err != nil {
-		log.Fatalln("Error reading from the database JSON file: ", err)
-	}
-
-	err = json.Unmarshal(byteData, &objects)
-	if err != nil {
-		log.Fatalln("Error unmarshalling database JSON file: ", err)
-	}
-}
 
 // compare : Helper function to perform all string checks in lowercase
 func compare(str string, substr string) bool {
@@ -103,7 +75,7 @@ func GetObjects(keyword string) (*[]Object, error) {
 		return &foundItems, nil
 	}
 
-	return nil, errors.New("No objects found")
+	return nil, errors.New("no objects found")
 }
 
 // GetFuzzyObjects : Return information about all objects matching a fuzzy keyword search
@@ -111,7 +83,7 @@ func GetFuzzyObjects(keyword string) (*[]Object, error) {
 	var foundItems []Object
 
 	for _, item := range objects {
-		if fuzzySearch(item, keyword) == true {
+		if fuzzySearch(item, keyword) {
 			foundItems = append(foundItems, item)
 		}
 	}
@@ -120,5 +92,5 @@ func GetFuzzyObjects(keyword string) (*[]Object, error) {
 		return &foundItems, nil
 	}
 
-	return nil, errors.New("No objects found")
+	return nil, errors.New("no objects found")
 }

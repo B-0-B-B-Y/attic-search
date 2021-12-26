@@ -47,3 +47,23 @@ func FuzzySearchGET(c *gin.Context) {
 		"items": items,
 	})
 }
+
+func SearchOne(c *gin.Context) {
+	keyword := c.Param("keyword")
+	if keyword == "" {
+		c.JSON(400, gin.H{
+			"Error": "You need to specify a search keyword",
+		})
+	}
+
+	result, err := database.SearchOneItem(keyword)
+	if err != nil {
+		c.JSON(500, gin.H{
+			"Error": err,
+		})
+	}
+
+	c.JSON(200, gin.H{
+		"result": result,
+	})
+}
