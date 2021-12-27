@@ -19,8 +19,6 @@ func main() {
 		})
 	})
 
-	router.GET("/search/word/:keyword", routes.SearchGET)
-	router.GET("/search/fuzzy/:keyword", routes.FuzzySearchGET)
-	router.GET("/search/one/:keyword", routes.SearchOne)
+	router.GET("/search/:keyword", routes.Search)
 	router.Run()
 }

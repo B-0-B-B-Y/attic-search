@@ -6,64 +6,30 @@ import (
 	"attic-search/database"
 )
 
-// SearchGET : Performs a lookup in the database using user-defined keyword
-func SearchGET(c *gin.Context) {
+// Perform a fuzzy word search across the DB and return any items that contain the keyword in any of their fields
+func Search(c *gin.Context) {
 	keyword := c.Param("keyword")
 	if keyword == "" {
 		c.JSON(400, gin.H{
 			"Error": "You need to specify a search keyword",
 		})
+		return
 	}
 
-	items, err := database.GetObjects(keyword)
+	result, err := database.SearchForItem(keyword)
 	if err != nil {
-		c.JSON(404, gin.H{
-			"Error": "No item found",
+		status := 500
+		if err.Error() == "record does not exist" {
+			status = 404
+		}
+
+		c.JSON(status, gin.H{
+			"Error": err.Error(),
 		})
+		return
 	}
 
 	c.JSON(200, gin.H{
-		"items": items,
-	})
-}
-
-// FuzzySearchGET : Performs a fuzzy text search against items in the database using user-defined keyword
-func FuzzySearchGET(c *gin.Context) {
-	keyword := c.Param("keyword")
-	if keyword == "" {
-		c.JSON(400, gin.H{
-			"Error": "You need to specify a search keyword",
-		})
-	}
-
-	items, err := database.GetFuzzyObjects(keyword)
-	if err != nil {
-		c.JSON(404, gin.H{
-			"Error": "No item found",
-		})
-	}
-
-	c.JSON(200, gin.H{
-		"items": items,
-	})
-}
-
-func SearchOne(c *gin.Context) {
-	keyword := c.Param("keyword")
-	if keyword == "" {
-		c.JSON(400, gin.H{
-			"Error": "You need to specify a search keyword",
-		})
-	}
-
-	result, err := database.SearchOneItem(keyword)
-	if err != nil {
-		c.JSON(500, gin.H{
-			"Error": err,
-		})
-	}
-
-	c.JSON(200, gin.H{
-		"result": result,
+		"items": result,
 	})
 }
