@@ -81,7 +81,24 @@ func SearchForItem(keyword string) (Object, error) {
 	return result, nil
 }
 
-// TODO - Implement inserting elements - should support 1 or many insertions from a single call
-// func InsertNewItems(items []Object) {
+// Inserts new items to the database, assuming they pass schema validation checks
+func InsertNewItems(items []Object) error {
+	var dataToInsert []interface{}
 
-// }
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	for _, object := range items {
+		dataToInsert = append(dataToInsert, object)
+	}
+
+	_, err := collection.InsertMany(ctx, dataToInsert)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+// WIP: Update an existing record with supplied data
+func UpdateExistingItem(objectId string, data Object) {}

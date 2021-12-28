@@ -33,3 +33,27 @@ func Search(c *gin.Context) {
 		"items": result,
 	})
 }
+
+func Insert(c *gin.Context) {
+	var items []database.Object
+
+	err := c.BindJSON(&items)
+	if err != nil {
+		c.JSON(500, gin.H{
+			"Error": err.Error(),
+		})
+		return
+	}
+
+	err = database.InsertNewItems(items)
+	if err != nil {
+		c.JSON(500, gin.H{
+			"Error": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(200, gin.H{
+		"Status": "Items inserted successfully",
+	})
+}
