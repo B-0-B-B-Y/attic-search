@@ -13,13 +13,14 @@ import (
 
 // Object : The database structure for each object stored in the database
 type Object struct {
-	Side        string   `json:"side"`
-	Position    int      `json:"position"`
-	Item        string   `json:"item"`
-	Container   string   `json:"container"`
-	Description string   `json:"description"`
-	Frequent    bool     `json:"frequent"`
-	Keywords    []string `json:"keywords"`
+	ID          string   `json:"_id" bson:",omitempty"`
+	Side        string   `json:"side,omitempty" bson:",omitempty"`
+	Position    int      `json:"position,omitempty" bson:",omitempty"`
+	Item        string   `json:"item,omitempty" bson:",omitempty"`
+	Container   string   `json:"container,omitempty" bson:",omitempty"`
+	Description string   `json:"description,omitempty" bson:",omitempty"`
+	Frequent    bool     `json:"frequent,omitempty" bson:",omitempty"`
+	Keywords    []string `json:"keywords,omitempty" bson:",omitempty"`
 }
 
 var client mongo.Client
@@ -100,5 +101,40 @@ func InsertNewItems(items []Object) error {
 	return nil
 }
 
-// WIP: Update an existing record with supplied data
-func UpdateExistingItem(objectId string, data Object) {}
+// Update an existing record with supplied data
+func UpdateExistingItem(data Object) error {
+	id, err := primitive.ObjectIDFromHex(data.ID)
+	if err != nil {
+		return err
+	}
+
+	// Clear ID before writing to mongo, prevents double insertion of the same ID
+	data.ID = ""
+
+	filter := bson.M{"_id": id}
+	doc, err := toDoc(data)
+	if err != nil {
+		return err
+	}
+	update := bson.M{
+		"$set": doc,
+	}
+	result := collection.FindOneAndUpdate(context.Background(), filter, update)
+
+	if result.Err() != nil {
+		return result.Err()
+	} else {
+		return nil
+	}
+}
+
+// Helper function to convert a struct object to a BSON document
+func toDoc(v interface{}) (doc *bson.D, err error) {
+	data, err := bson.Marshal(v)
+	if err != nil {
+		return
+	}
+
+	err = bson.Unmarshal(data, &doc)
+	return
+}

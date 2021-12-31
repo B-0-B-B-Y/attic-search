@@ -57,3 +57,23 @@ func Insert(c *gin.Context) {
 		"Status": "Items inserted successfully",
 	})
 }
+
+func Update(c *gin.Context) {
+	var data database.Object
+
+	err := c.BindJSON(&data)
+	if err != nil {
+		c.JSON(500, gin.H{
+			"Error": err.Error(),
+		})
+		return
+	}
+
+	err = database.UpdateExistingItem(data)
+	if err != nil {
+		c.JSON(500, gin.H{
+			"Error": err.Error(),
+		})
+		return
+	}
+}
