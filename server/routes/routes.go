@@ -77,3 +77,21 @@ func Update(c *gin.Context) {
 		return
 	}
 }
+
+func Delete(c *gin.Context) {
+	objectId := c.Param("objectId")
+	if objectId == "" {
+		c.JSON(400, gin.H{
+			"Error": "You need to specify an object id",
+		})
+		return
+	}
+
+	err := database.DeleteItem(objectId)
+	if err != nil {
+		c.JSON(500, gin.H{
+			"Error": err.Error(),
+		})
+		return
+	}
+}

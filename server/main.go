@@ -22,5 +22,6 @@ func main() {
 	router.GET("/search/:keyword", routes.Search)
 	router.POST("/insert", routes.Insert)
 	router.POST("/update", routes.Update)
+	router.DELETE("/delete/:objectId", routes.Delete)
 	router.Run()
 }

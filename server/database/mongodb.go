@@ -128,6 +128,22 @@ func UpdateExistingItem(data Object) error {
 	}
 }
 
+// Delete an item from the DB matching the object ID
+func DeleteItem(objectId string) error {
+	id, err := primitive.ObjectIDFromHex(objectId)
+	if err != nil {
+		return err
+	}
+
+	filter := bson.M{"_id": id}
+	_, err = collection.DeleteOne(context.Background(), filter)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
 // Helper function to convert a struct object to a BSON document
 func toDoc(v interface{}) (doc *bson.D, err error) {
 	data, err := bson.Marshal(v)
